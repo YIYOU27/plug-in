@@ -1,10 +1,21 @@
 <template>
-    <div>启蒙乐园</div>
+    <p class="p-center">
+        <img :src="eden" alt="">
+    </p>
 </template>
 
+<script>
+import eden from 'common/images/eden.jpg'
+export default {
+  data () {
+    return {
+      eden
+    }
+  }
+}
+</script>
+
 <style lang="stylus" scoped>
-div
+img
     width 100%
-    height 600px
-    background green
 </style>

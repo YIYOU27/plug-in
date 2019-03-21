@@ -1,5 +1,5 @@
 <template>
-    <div>market
+    <div>
         <Slide></Slide>
     </div>
 </template>
@@ -15,8 +15,4 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-div
-    width 100%
-    height 600px
-    background pink
 </style>

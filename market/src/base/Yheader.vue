@@ -1,9 +1,13 @@
 <template>
+<div class="container">
     <el-header class="clearfix">
         <el-menu class="ul-nav y-left" mode="horizontal">
             <el-menu-item index="1">
                 <i class="iconfont icongaiicon-"></i>
                 微商城
+            </el-menu-item>
+            <el-menu-item index="1">
+                |
             </el-menu-item>
             <el-menu-item index="1">
                 <i class="iconfont iconweibo"></i>
@@ -14,18 +18,21 @@
             <el-menu-item index="1">
                 <router-link to="/login">
                 登陆/注册
-
                 </router-link>
             </el-menu-item>
             <el-menu-item index="1">
-                <el-badge is-dot class="item">
-                    购物车
-                    <i class="iconfont icongouwuchekong"></i>
-                </el-badge>
+                |
+            </el-menu-item>
+            <el-menu-item index="1">
+                 购物车
+            </el-menu-item>
+            <el-menu-item index="1">
+                |
             </el-menu-item>
             <el-menu-item index="1">收藏夹</el-menu-item>
         </el-menu>
     </el-header>
+    </div>
 </template>
 
 <script>
@@ -49,7 +56,10 @@ export default {
                 color $text-theme
                 padding 0 5px //r
                 line-height 36px //r
-                &:hover
+                &:hover           //导航
                     border-bottom 3px solid #38d39f!important
                     background $theme-backgroud //r
+                .el-badge
+                    .el-badge__content.is-fixed
+                        top 8px!important
 </style>

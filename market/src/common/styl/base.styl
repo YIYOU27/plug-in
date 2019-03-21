@@ -1,3 +1,5 @@
+@import './variable.styl'
+
 .y-left
   float left
 
@@ -17,9 +19,15 @@
     visibility hidden
 
 .container
-  width: 1200px
+  width: $center-width
   margin: 0 auto
 
 body
   font-family: 'Microsoft YaHei'
   background-color: #f9f9f9
+
+.p-center
+  text-align: center
+
+.router-link-active
+  color red
