@@ -90,7 +90,7 @@
                 </el-dropdown>
             </div>
             <div class="center clearfix">
-                <router-link to="/market">元祖商城</router-link>
+                <router-link to="/market">商城</router-link>
                 <router-link to="/story">品牌故事</router-link>
                 <router-link to="/foretaste">企业试吃</router-link>
                 <router-link to="/eden">启蒙乐园</router-link>
