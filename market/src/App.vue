@@ -3,13 +3,20 @@
       <Yheader></Yheader>
       <Search></Search>
       <div v-if="see" class="location-nav container">
-        <router-link to="/market">主页</router-link>   >
-        <a href="javascript:;">{{$route.name}}</a>
+        <el-tag>
+          <router-link to="/market">主页</router-link>
+        </el-tag>
+         <el-tag>
+            {{$route.name}}
+        </el-tag>
       </div>
-      <transition mode="out-in" :name="name">
+      <transition mode="out-in">
         <router-view></router-view>
       </transition>
       <Yfooter></Yfooter>
+      <el-tooltip class="item" effect="light" content="回到顶部" placement="right">
+        <vueToTop style="dispaly:block" color="#0a3455" size="50" top="10" type="4"></vueToTop>
+      </el-tooltip>
   </div>
 </template>
 
@@ -36,11 +43,6 @@ export default {
   },
   watch: {
     $route (to, from) {
-      if (to.meta.index > from.meta.index) {
-        this.name = 'left'
-      } else {
-        this.name = 'right'
-      }
       this.see = to.name !== '主页' ? 1 : 0
     }
   },
@@ -50,19 +52,20 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.left-enter { transform:translateX(100%) }
-.left-enter-to { translateX(0) }
-.left-enter-active { transition:1s }
-.left-leave { transform:translateX(0) }
-.left-leave-to { translateX(-100%) }
-.left-leave-active { transition:1s }
-
-.right-enter { transform:translateX(-100%) }
-.right-enter-to { translateX(0) }
-.right-enter-active { transition:1s }
-.right-leave { transform:translateX(0) }
-.right-leave-to { translateX(100%) }
-.right-leave-active { transition:1s }
+.v-enter
+  transform translateY(5%)
+  opacity 0
+.v-enter-to
+  transform translateY(0)
+  opacity 1
+.v-enter-active, .v-leave-active
+  transition: 0.4s
+.v-leave
+  transform translateY(0)
+  opacity 1
+.v-leave-to
+  translateY(-5%)
+  opacity 0
 
 .location-nav
   height 45px

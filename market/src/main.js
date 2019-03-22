@@ -4,11 +4,13 @@ import Vue from 'vue'
 import App from '@/App'
 import router from '@/router/index.js'
 import ElementUI from 'element-ui'
+import vueToTop from 'vue-totop'
 
 import 'swiper/dist/css/swiper.css'
 import 'common/styl/index.styl'
 import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(vueToTop)
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false

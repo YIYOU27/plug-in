@@ -41,7 +41,7 @@
                     </el-breadcrumb-item>
                     <el-breadcrumb-item>
                         <el-tooltip class="item" effect="light" content="收藏夹" placement="bottom">
-                            <i class="iconfont iconshoucangjia change-font-color"></i>
+                            <i class="iconfont iconshoucang change-font-color"></i>
                         </el-tooltip>
                     </el-breadcrumb-item>
                 </el-breadcrumb>
