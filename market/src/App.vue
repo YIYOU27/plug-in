@@ -39,11 +39,11 @@ export default {
     }
   },
   mounted () {
-    this.see = this.$route.name !== '主页' && '主页' ? 1 : 0
+    this.see = this.$route.name !== '主页' && this.$route.name !== 'home' ? 1 : 0
   },
   watch: {
     $route (to, from) {
-      this.see = to.name !== '主页' ? 1 : 0
+      this.see = to.name !== '主页' && 'home' ? 1 : 0
     }
   },
   methods: {

@@ -1,7 +1,12 @@
 <template>
     <div>
-        <Slide :className = "mar" :images = "images" :swiperx = "banners"></Slide>
+        <Slide class="marketSlide" :className = "mar" :images = "images" :swiperx = "banners"></Slide>
+        <br/>
+        <br/>
+        <br/>
         <Recommend></Recommend>
+        <br/>
+        <Column :itemCategory="images"></Column>
     </div>
 </template>
 
@@ -10,7 +15,7 @@ import Slide from 'base/Slide'
 import png from 'common/images/banner/p3.jpg'
 import png2 from 'common/images/banner/p4.jpg'
 import Recommend from './Recommend'
-
+import Column from './Column'
 export default {
   data () {
     return {
@@ -23,7 +28,7 @@ export default {
         },
         scrollbar: 'marscrollbar'
       },
-      images: [png, png2],
+      images: [png, png2, png],
       banners: {
         speed: 300,
         loop: true,
@@ -39,10 +44,22 @@ export default {
   },
   components: {
     Slide,
-    Recommend
+    Recommend,
+    Column
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+@import '~common/styl/variable'
+.marketSlide
+  /deep/ .swiper-container
+    width 100%
+    height 438px
+    .swiper-wrapper
+      .swiper-slide
+        a
+          img
+            width $center-width
+            height 438px
 </style>
