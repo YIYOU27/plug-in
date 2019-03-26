@@ -10,8 +10,8 @@ import 'swiper/dist/css/swiper.css'
 import 'common/styl/index.styl'
 import 'element-ui/lib/theme-chalk/index.css'
 
-Vue.use(vueToTop)
 Vue.use(ElementUI)
+Vue.use(vueToTop)
 
 Vue.config.productionTip = false
 
