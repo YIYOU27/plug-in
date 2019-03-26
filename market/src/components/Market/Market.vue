@@ -2,8 +2,6 @@
     <div>
         <Slide class="marketSlide" :className = "mar" :images = "images" :swiperx = "banners"></Slide>
         <br/>
-        <br/>
-        <br/>
         <Recommend></Recommend>
         <br/>
         <Column :itemCategory="images"></Column>

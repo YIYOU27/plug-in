@@ -1,9 +1,13 @@
 import Vue from 'vue'
-import Login from 'base/Login'
 import Router from 'vue-router'
 import Eden from 'components/Eden/Eden'
 import Story from 'components/Story/Story'
 import Market from 'components/Market/Market'
+import Particulars from 'components/Market/Particulars'
+import LoginRegister from 'components/LoginRegister/LoginRegister'
+import Login from 'components/LoginRegister/Login'
+import Register from 'components/LoginRegister/Register'
+
 import Contact from 'components/Contact/Contact'
 import Foretaste from 'components/Foretaste/Foretaste'
 
@@ -30,47 +34,48 @@ export default new Router({
     {
       path: '/market',
       component: Market,
-      name: '主页',
-      meta: {
-        index: 0
-      }
+      name: '主页'
     },
     {
-      path: '/login',
-      component: Login,
-      name: '登录'
+      path: '/particulars',
+      name: '商品详情',
+      component: Particulars
+    },
+    {
+      path: '/loginregister',
+      component: LoginRegister,
+      children: [
+        {
+          path: '',
+          component: Login,
+          name: '登录'
+        },
+        {
+          path: 'register',
+          name: '注册',
+          component: Register
+        }
+      ]
     },
     {
       path: '/story',
       component: Story,
-      name: '故事',
-      meta: {
-        index: 1
-      }
+      name: '故事'
     },
     {
       path: '/foretaste',
       component: Foretaste,
-      name: '企业试吃',
-      meta: {
-        index: 2
-      }
+      name: '企业试吃'
     },
     {
       path: '/eden',
       component: Eden,
-      name: '乐园',
-      meta: {
-        index: 3
-      }
+      name: '乐园'
     },
     {
       path: '/contact',
       component: Contact,
-      name: '联系',
-      meta: {
-        index: 4
-      }
+      name: '联系'
     }
   ]
 })
