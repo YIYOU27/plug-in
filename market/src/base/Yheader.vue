@@ -23,16 +23,11 @@
             <div class="header-info y-right">
                 <el-breadcrumb separator="|">
                     <el-breadcrumb-item>
-                         <el-dropdown placement="bottom" trigger="hover">
-                        <span class="el-dropdown-link">
-                            <i class="iconfont iconwode change-font-color"></i>
-                        </span>
-                        <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item>登录</el-dropdown-item>
-                            <el-dropdown-item>注册</el-dropdown-item>
-                            <el-dropdown-item>注销</el-dropdown-item>
-                        </el-dropdown-menu>
-                    </el-dropdown>
+                      <el-tooltip class="item" effect="light" content="个人中心" placement="bottom">
+                        <router-link v-if="login" to="/personalcenter">
+                          <i class="iconfont iconwode change-font-color"></i>
+                        </router-link>
+                      </el-tooltip>
                     </el-breadcrumb-item>
                     <el-breadcrumb-item>
                         <el-tooltip class="item" effect="light" content="购物车" placement="bottom">

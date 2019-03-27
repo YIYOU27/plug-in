@@ -10,6 +10,9 @@ import 'swiper/dist/css/swiper.css'
 import 'common/styl/index.styl'
 import 'element-ui/lib/theme-chalk/index.css'
 
+import vueMagnify from 'vue-magnify'
+Vue.use(vueMagnify)
+
 Vue.use(ElementUI)
 Vue.use(vueToTop)
 

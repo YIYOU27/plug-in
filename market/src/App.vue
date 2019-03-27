@@ -14,9 +14,7 @@
         <router-view></router-view>
       </transition>
       <Yfooter></Yfooter>
-      <el-tooltip class="item" effect="light" content="回到顶部" placement="right">
-        <vueToTop style="dispaly:block" color="#0a3455" size="50" top="10" type="4"></vueToTop>
-      </el-tooltip>
+      <Car></Car>
   </div>
 </template>
 
@@ -24,13 +22,15 @@
 import Yheader from 'base/Yheader'
 import Yfooter from 'base/Yfooter'
 import Search from 'base/Search'
+import Car from 'base/Car'
 
 export default {
   name: 'App',
   components: {
     Yheader,
     Yfooter,
-    Search
+    Search,
+    Car
   },
   data () {
     return {

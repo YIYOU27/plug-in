@@ -7,8 +7,14 @@ import Particulars from 'components/Market/Particulars'
 import LoginRegister from 'components/LoginRegister/LoginRegister'
 import Login from 'components/LoginRegister/Login'
 import Register from 'components/LoginRegister/Register'
+import Shoppongcar from 'base/Shoppingcar'
 
 import Contact from 'components/Contact/Contact'
+import PersonalCenter from 'components/PersonalCenter/PersonalCenter'
+import Tabcard from 'components/PersonalCenter/Tabcard'
+import Myprofile from 'components/PersonalCenter/My/My-profile'
+import Password from 'components/PersonalCenter/My/Password'
+
 import Foretaste from 'components/Foretaste/Foretaste'
 
 Vue.use(Router)
@@ -32,12 +38,38 @@ export default new Router({
       name: 'home'
     },
     {
+      path: '/personalcenter',
+      component: PersonalCenter,
+      children: [
+        {
+          path: '',
+          name: '我的账户',
+          component: Tabcard
+        },
+        {
+          path: 'myprofile',
+          name: '我的资料',
+          component: Myprofile
+        },
+        {
+          path: 'password',
+          name: '修改密码',
+          component: Password
+        }
+      ]
+    },
+    {
+      path: '/shoppingcar',
+      component: Shoppongcar,
+      name: '购物车'
+    },
+    {
       path: '/market',
       component: Market,
       name: '主页'
     },
     {
-      path: '/particulars',
+      path: '/particulars/:images',
       name: '商品详情',
       component: Particulars
     },
