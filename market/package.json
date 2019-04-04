@@ -14,11 +14,14 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "element-china-area-data": "^4.1.2",
     "element-ui": "^2.6.3",
     "img-magnifier": "^0.1.2",
     "swiper": "^4.5.0",
     "verification-code": "^1.0.0",
     "vue": "^2.5.2",
+    "vue-axios": "^2.1.4",
     "vue-magnify": "^1.0.1",
     "vue-piczoom": "^1.0.6",
     "vue-router": "^3.0.1",

@@ -24,7 +24,7 @@ export default {
 
 <style lang="stylus" scoped>
 footer
-    margin 25px auto 0px auto
+    margin 100px auto 0px auto
     padding-bottom 50px
     background-color #ffffff
     border-top 7px solid #de5251

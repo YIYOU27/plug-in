@@ -3,18 +3,12 @@
       <Yheader></Yheader>
       <Search></Search>
       <div v-if="see" class="location-nav container">
-        <el-tag>
-          <router-link to="/market">主页</router-link>
-        </el-tag>
-         <el-tag>
-            {{$route.name}}
-        </el-tag>
       </div>
       <transition mode="out-in">
         <router-view></router-view>
       </transition>
       <Yfooter></Yfooter>
-      <Car></Car>
+      <LeftCar></LeftCar>
   </div>
 </template>
 
@@ -22,7 +16,7 @@
 import Yheader from 'base/Yheader'
 import Yfooter from 'base/Yfooter'
 import Search from 'base/Search'
-import Car from 'base/Car'
+import LeftCar from 'base/LeftCar'
 
 export default {
   name: 'App',
@@ -30,7 +24,7 @@ export default {
     Yheader,
     Yfooter,
     Search,
-    Car
+    LeftCar
   },
   data () {
     return {
@@ -39,12 +33,12 @@ export default {
     }
   },
   mounted () {
-    this.see = this.$route.name !== '主页' && this.$route.name !== 'home' ? 1 : 0
+    if ('loing' in window.localStorage) {
+      this.$store.commit('login', window.localStorage.login)
+      // console.log(this.$store.state.login.id)
+    }
   },
   watch: {
-    $route (to, from) {
-      this.see = to.name !== '主页' && 'home' ? 1 : 0
-    }
   },
   methods: {
   }

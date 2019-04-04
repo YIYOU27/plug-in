@@ -1,21 +1,32 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Eden from 'components/Eden/Eden'
-import Story from 'components/Story/Story'
-import Market from 'components/Market/Market'
-import Particulars from 'components/Market/Particulars'
-import LoginRegister from 'components/LoginRegister/LoginRegister'
-import Login from 'components/LoginRegister/Login'
-import Register from 'components/LoginRegister/Register'
-import Shoppongcar from 'base/Shoppingcar'
+import News from 'base/News.vue'
+import CommodityType from 'base/CommodityType' // 商品小类页
+import Eden from 'components/Eden/Eden' // 乐园
+import Story from 'components/Story/Story' // 故事
+import Contact from 'components/Contact/Contact' // 联系我们
+import OrderList from 'components/Order-list/Order-list' // 订单页
+import CollectList from 'components/Collect-list/Collect-list' // 收藏页
 
-import Contact from 'components/Contact/Contact'
-import PersonalCenter from 'components/PersonalCenter/PersonalCenter'
-import Tabcard from 'components/PersonalCenter/Tabcard'
-import Myprofile from 'components/PersonalCenter/My/My-profile'
-import Password from 'components/PersonalCenter/My/Password'
+import Market from 'components/Market/Market' // 商城
+import Particulars from 'components/Market/Particulars' // 商品详情
 
-import Foretaste from 'components/Foretaste/Foretaste'
+import LoginRegister from 'components/LoginRegister/LoginRegister' // 登录注册
+import Login from 'components/LoginRegister/Login' // 登录
+import Register from 'components/LoginRegister/Register' // 注册
+
+import FlowPath from 'components/Shoppingcenter/FlowPath' // 购物流程
+import Shoppongcar from 'components/Shoppingcenter/Shoppingcar' // 购物车页
+import Orderinformation from 'components/Shoppingcenter/Orderinformation' // 订单详情
+import Submit from 'components/Shoppingcenter/Submit' // 订单详情
+
+import PersonalCenter from 'components/PersonalCenter/PersonalCenter' // 个人中心
+import Tabcard from 'components/PersonalCenter/Tabcard' // 个人中心卡片
+import Myprofile from 'components/PersonalCenter/My/My-profile' // 我的信息
+import Password from 'components/PersonalCenter/My/Password' // 修改密码
+import Info from 'components/PersonalCenter/My/Info' // 修改个人信息
+import Address from 'components/PersonalCenter/My/Address' // 添加地址
+import Addresslist from 'components/PersonalCenter/My/Addresslist' // 地址页
 
 Vue.use(Router)
 
@@ -38,39 +49,127 @@ export default new Router({
       name: 'home'
     },
     {
+      path: '/commodityType',
+      component: CommodityType
+    },
+    {
+      path: '/news:news?',
+      component: News
+    },
+    {
+      path: '/orderlist',
+      component: OrderList,
+      name: 'orderlist',
+      meta: {
+        name: '订单列表'
+      }
+    },
+    {
+      path: '/collectList',
+      component: CollectList,
+      name: 'collectList',
+      meta: {
+        name: '我的收藏'
+      }
+    },
+    {
+      path: '/flowpath',
+      component: FlowPath,
+      children: [
+        {
+          path: 'shoppingcar/:id?',
+          component: Shoppongcar,
+          name: 'shoppingcar',
+          meta: {
+            name: '购物车'
+          }
+        },
+        {
+          path: 'orderinformation',
+          component: Orderinformation,
+          name: 'orderinformation',
+          meta: {
+            name: '订单详情'
+          }
+        },
+        {
+          path: 'submit',
+          component: Submit,
+          name: 'Submit',
+          meta: {
+            name: '提交成功'
+          }
+        }
+      ]
+    },
+    {
       path: '/personalcenter',
       component: PersonalCenter,
       children: [
         {
           path: '',
-          name: '我的账户',
-          component: Tabcard
+          name: 'Tabcard',
+          component: Tabcard,
+          meta: {
+            name: '个人中心'
+          }
         },
         {
           path: 'myprofile',
-          name: '我的资料',
-          component: Myprofile
+          name: 'myprofile',
+          component: Myprofile,
+          meat: {
+            name: '我的信息'
+          }
         },
         {
           path: 'password',
-          name: '修改密码',
-          component: Password
+          name: 'password',
+          component: Password,
+          meta: {
+            name: '修改密码'
+          }
+        },
+        {
+          path: 'modifyInfo',
+          name: 'modifyInfo',
+          component: Info,
+          meta: {
+            name: '修改个人信息'
+          }
+        },
+        {
+          path: 'address/:addressID?',
+          name: 'address',
+          component: Address,
+          meta: {
+            name: '修改个人信息'
+          }
+        },
+        {
+          path: 'address-list',
+          name: 'address-list',
+          component: Addresslist,
+          meta: {
+            name: '收货地址'
+          }
         }
       ]
     },
     {
-      path: '/shoppingcar',
-      component: Shoppongcar,
-      name: '购物车'
-    },
-    {
       path: '/market',
       component: Market,
-      name: '主页'
+      name: 'market',
+      meta: {
+        name: '商城'
+      }
     },
     {
-      path: '/particulars/:images',
-      name: '商品详情',
+      path: '/particulars/:imageID?',
+      name: 'particulars',
+      meta: {
+        name: '商品详情页'
+      },
       component: Particulars
     },
     {
@@ -80,11 +179,17 @@ export default new Router({
         {
           path: '',
           component: Login,
-          name: '登录'
+          name: 'login',
+          meta: {
+            name: '登录'
+          }
         },
         {
           path: 'register',
-          name: '注册',
+          name: 'register',
+          meta: {
+            name: '注册'
+          },
           component: Register
         }
       ]
@@ -92,22 +197,26 @@ export default new Router({
     {
       path: '/story',
       component: Story,
-      name: '故事'
-    },
-    {
-      path: '/foretaste',
-      component: Foretaste,
-      name: '企业试吃'
+      name: 'story',
+      meta: {
+        name: '企业故事'
+      }
     },
     {
       path: '/eden',
       component: Eden,
-      name: '乐园'
+      name: 'eden',
+      meta: {
+        name: '乐园'
+      }
     },
     {
       path: '/contact',
       component: Contact,
-      name: '联系'
+      name: 'contact',
+      meta: {
+        name: '联系我们'
+      }
     }
   ]
 })

@@ -13,7 +13,7 @@
                             <i class="iconfont iconqiatongxingxiang change-font-color"></i>
                         </el-tooltip>
                     </el-breadcrumb-item>
-                    <el-breadcrumb-item to="/">
+                    <el-breadcrumb-item>
                         <el-tooltip class="item" effect="light" content="全屏" placement="bottom">
                             <i class="iconfont iconquanping change-font-color" @click="handleFullScreen"></i>
                         </el-tooltip>
@@ -23,20 +23,31 @@
             <div class="header-info y-right">
                 <el-breadcrumb separator="|">
                     <el-breadcrumb-item>
-                      <el-tooltip class="item" effect="light" content="个人中心" placement="bottom">
-                        <router-link v-if="login" to="/personalcenter">
+                      <router-link v-if="!login" to="/loginregister" class="change-font-color">请登录</router-link>
+                      <el-tooltip v-if="login" class="item" effect="light" content="个人中心" placement="bottom">
+                        <router-link to="/personalcenter">
                           <i class="iconfont iconwode change-font-color"></i>
                         </router-link>
                       </el-tooltip>
                     </el-breadcrumb-item>
                     <el-breadcrumb-item>
                         <el-tooltip class="item" effect="light" content="购物车" placement="bottom">
+                          <router-link to="/flowpath/shoppingcar">
                             <i class="iconfont icongouwucheman change-font-color"></i>
+                          </router-link>
                         </el-tooltip>
                     </el-breadcrumb-item>
                     <el-breadcrumb-item>
                         <el-tooltip class="item" effect="light" content="收藏夹" placement="bottom">
+                          <router-link to="/collectList">
                             <i class="iconfont iconshoucang change-font-color"></i>
+                          </router-link>
+                        </el-tooltip>
+                    </el-breadcrumb-item>
+                    <el-breadcrumb-item>
+                        <el-tooltip class="item" effect="light" content="退出登录" placement="bottom">
+                            <i class="iconfont icontuichudenglu change-font-color" @click="exit"></i>
+                            {{login}}
                         </el-tooltip>
                     </el-breadcrumb-item>
                 </el-breadcrumb>
@@ -49,7 +60,17 @@
 export default {
   data () {
     return {
-      login: true
+
+    }
+  },
+  computed: {
+    login () {
+      return this.$store.state.login
+    }
+  },
+  mounted () {
+    if ('loing' in window.localStorage) {
+      this.$store.commit('login', window.localStorage.login)
     }
   },
   methods: {
@@ -79,6 +100,16 @@ export default {
         }
       }
       this.fullscreen = !this.fullscreen
+    },
+    exit () {
+      if (window.localStorage.hasOwnProperty('login')) {
+        window.localStorage.removeItem('login')
+      }
+      this.$store.commit('exit') // vuex
+    },
+    x () {
+      console.log(this.login)
+      // console.log(this.$store.state.login)
     }
   }
 }

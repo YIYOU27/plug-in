@@ -1,17 +1,20 @@
 <template>
     <div>
-        <Slide class="marketSlide" :className = "mar" :images = "images" :swiperx = "banners"></Slide>
+        <Slide class="marketSlide" :className = "mar" :images = "images" :swiperx = "banners"></Slide> <!--banner轮播-->
         <br/>
-        <Recommend></Recommend>
+        <Recommend></Recommend> <!--推荐-->
         <br/>
-        <Column :itemCategory="images"></Column>
+        <Column :itemCategory="images"></Column> <!--商品大类-->
     </div>
 </template>
 
 <script>
 import Slide from 'base/Slide'
-import png from 'common/images/banner/p3.jpg'
-import png2 from 'common/images/banner/p4.jpg'
+import v1 from 'common/images/banner/v1.jpg'
+import v2 from 'common/images/banner/v2.jpg'
+import v3 from 'common/images/banner/v3.jpg'
+import v4 from 'common/images/banner/v4.jpg'
+
 import Recommend from './Recommend'
 import Column from './Column'
 export default {
@@ -26,7 +29,7 @@ export default {
         },
         scrollbar: 'marscrollbar'
       },
-      images: [png, png2, png],
+      images: [v1, v2, v3, v4],
       banners: {
         speed: 300,
         loop: true,
@@ -37,8 +40,16 @@ export default {
         scrollbar: false, // 滚动条
         slidesPerView: 1,
         slidesPerGroup: 1
-      }
+      },
+      dalei: null
     }
+  },
+  mounted () {
+    this.$http.get('http://192.168.83.252:5000/activity')
+      .then((response) => {
+        this.$store.commit('recommend', response.data.data.result)
+        console.log(response)
+      })
   },
   components: {
     Slide,

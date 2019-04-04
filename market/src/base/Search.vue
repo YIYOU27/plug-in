@@ -36,54 +36,54 @@
                                     <i></i>
                                     <a href="javascript:;">踏青季</a>
                                 </span>
-                                <a href="javascript:;">踏青小食</a>
-                                <a href="javascript:;">踏青蛋糕</a>
+                                <router-link to="/commodityType">踏青小食</router-link>
+                                <router-link to="/commodityType">踏青蛋糕</router-link>
                             </div>
                         </el-dropdown-item>
                         <el-dropdown-item>
                             <div>
                                 <span>
                                     <i></i>
-                                    <a href="javascript:;">MUCH蛋糕</a>
+                                <router-link to="/commodityType">MUCH蛋糕</router-link>
                                 </span>
-                                <a href="javascript:;">鲜奶蛋糕</a>
-                                <a href="javascript:;">巧克力蛋糕</a>
-                                <a href="javascript:;">慕斯蛋糕</a>
-                                <a href="javascript:;">多层蛋糕</a>
+                                <router-link to="/commodityType">鲜奶蛋糕</router-link>
+                                <router-link to="/commodityType">巧克力蛋糕</router-link>
+                                <router-link to="/commodityType">慕斯蛋糕</router-link>
+                                <router-link to="/commodityType">多层蛋糕</router-link>
                             </div>
                         </el-dropdown-item>
                         <el-dropdown-item>
                             <div>
                                 <span>
                                     <i></i>
-                                    <a href="javascript:;">元祖礼盒</a>
+                                    <router-link to="/commodityType">元祖礼盒</router-link>
                                 </span>
-                                <a href="javascript:;">水果礼盒</a>
-                                <a href="javascript:;">糕点礼盒</a>
+                                <router-link to="/commodityType">水果礼盒</router-link>
+                                <router-link to="/commodityType">糕点礼盒</router-link>
                             </div>
                         </el-dropdown-item>
                         <el-dropdown-item>
                             <div>
                                 <span>
                                     <i></i>
-                                    <a href="javascript:;">精致西点</a>
+                                    <router-link to="/commodityType">精致西点</router-link>
                                 </span>
-                                <a href="javascript:;">小慕思类</a>
-                                <a href="javascript:;">麻糬类</a>
-                                <a href="javascript:;">其他</a>
+                                <router-link to="/commodityType">小慕思类</router-link>
+                                <router-link to="/commodityType">麻糬类</router-link>
+                                <router-link to="/commodityType">其他</router-link>
                             </div>
                         </el-dropdown-item>
                         <el-dropdown-item>
                             <div>
                                 <span>
                                     <i></i>
-                                    <a href="javascript:;">元祖卡卷</a>
+                                    <router-link to="/commodityType">元祖卡卷</router-link>
                                 </span>
-                                <a href="javascript:;">礼卡</a>
-                                <a href="javascript:;">水果卷</a>
-                                <a href="javascript:;">西点卷</a>
-                                <a href="javascript:;">蛋糕卷</a>
-                                <a href="javascript:;">电子卷</a>
+                                <router-link to="/commodityType">礼卡</router-link>
+                                <router-link to="/commodityType">水果卷</router-link>
+                                <router-link to="/commodityType">西点卷</router-link>
+                                <router-link to="/commodityType">蛋糕卷</router-link>
+                                <router-link to="/commodityType">电子卷</router-link>
                             </div>
                         </el-dropdown-item>
                     </el-dropdown-menu>
@@ -92,7 +92,6 @@
             <div class="center clearfix">
                 <router-link to="/market">商城</router-link>
                 <router-link to="/story">品牌故事</router-link>
-                <router-link to="/foretaste">企业试吃</router-link>
                 <router-link to="/eden">启蒙乐园</router-link>
                 <router-link to="/contact">联系我们</router-link>
             </div>
