@@ -13,7 +13,7 @@
                     <button type="button">搜索</button>
                 </form>
                 <p>
-                    热门搜索：
+                    酒店预订：
                     <a href="javascript:;">MUCH蛋糕</a>
                     <a href="javascript:;">精致糕点</a>
                 </p>
