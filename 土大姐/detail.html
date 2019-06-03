@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>土大姐</title>
+		<link rel="stylesheet" href="css/haidao.css" />		
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery.jqzoom.js" ></script>
+		<script type="text/javascript" src="js/detail.js" ></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+	</head>
+	<body>
+		<!-- 顶部工具条 -->
+		<div class="layout border-bottom border-top-green bg-gray-white">
+			<div class="site-bar container"></div>
+		</div>
+		<!-- 头部 -->
+		<div class="layout header-wrap">
+			<div class="container header">
+				<div class="logo fl">
+					<a href="/"><img src="image/logo.png"/></a>
+				</div>
+				<!-- 搜索框 -->
+				<div class="search-wrap">
+					<div class="search border border-main border-small">
+						<form name="form-search" action="#" method="post">
+							<input class="input border-none bg-none fl" type="text" placeholder="请输入商品关键字" value="" />
+							<input class="button text-big text-white radius-none bg-main fr" type="button" value="搜索" />
+						</form>
+					</div>
+					<ul class="keyword margin-top text-gray">
+						<li><a class="text-gray" href="#">鲜花饼</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">野生菌</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">蜂蜜</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">三七</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">天麻</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">玛咖</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">普洱茶</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div class="nav layout bg-mix">
+			<div class="container">
+				<!-- 商品分类 -->
+				<div class="category-wrap fl">
+					<h2 class="dt bg-main text-default text-white">
+						<i class="icon-small icon-classify"></i>分类超市
+					</h2>
+					<div class="dd">
+						<ul class="dd-inner bg-main fl clearfix">
+							<li class="item">
+								<dl class="left-category">
+									<dt><em class="icon-small icon-goods"></em><a href="" class="strong">休闲零食</a></dt>
+									<dd>
+										<a href="">鲜花饼</a>
+										<a href="">糖果零食</a>
+										<a href="">牛肉干巴</a>
+										<a href="">宣威火腿</a>
+										<a href="">李烤鸭</a>
+									</dd>
+								</dl>
+							</li>
+							<li class="item">
+								<dl class="left-category">
+									<dt><em class="icon-small icon-goods"></em><a href="" class="strong">滋补养生</a></dt>
+									<dd>
+										<a href="">玛咖</a>
+										<a href="">三七</a>
+										<a href="">天麻</a>
+										<a href="">蜂蜜</a>
+										<a href="">辣木</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+						<div class="droplayer-wrap border">
+							<div class="droplayer-text clearfix">
+								<div class="item-sub">
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="" class="text-main">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+								</div>
+								<div class="item-sub">
+									<h5 class=""><a href="">保健品</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">玛咖</a></li>
+										<li><a href="">三七</a></li>
+										<li><a href="" class="text-main">天麻</a></li>
+										<li><a href="">蜂蜜</a></li>
+										<li><a href="">辣木</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="" class="text-main">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 商品分类结束 -->
+				<ul class="site-menu text-default fl">
+					<li><a href="">首页</a></li>
+					<li><a href="business_topics.html">万商计划</a></li>
+					<li><a href="">现烤鲜花饼</a></li>
+					<li><a href="">创业大赛</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--面包屑-->
+		<div class="container crumbs clearfix">
+			<p class="fl layout text-sub">
+				<i class="icon-small icon-position"></i>
+				<a href="" class="text-sub">首页</a>
+				<em class="strong">></em>
+				<a href="" class="text-sub">休闲零食</a>
+				<em class="strong">></em>
+				<a href="" class="text-sub">糕点糖果</a>
+				<em class="strong">></em>
+				<a href="" class="text-sub">商品详情</a>				
+			</p>
+		</div>
+		<!--商品详情-->
+		<div class="product-info border-top-green container border border-gray-white clearfix">
+			<div class="preview">
+				<div id="spec-n" class="padding-15">
+					<div class="jqzoom"><img src="image/goods.jpg" width="320" height="320" /></div>
+				</div>
+				<div id="showDetails" style="display: none;">
+                    <img src="image/goods.jpg" id="showImgBig" alt="" width="320" height="320" />
+                </div>
+				<div class="slider border-top" id="spec-list">
+					<div class="slider-items">
+						<ul class="lh">
+							<li class="current"><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+							<li><img src="image/pic.png" alt="" width="54" height="54" /></li>
+							<li><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+							<li><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+							<li><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+							<li><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+							<li><img src="image/goods.jpg" alt="" width="54" height="54" /></li>
+						</ul>
+					</div>
+				</div>
+				<div class="short-share padding-big-bottom padding-15-lr">
+					<span class="text-gray">商品编号：6923293898021</span>
+					<a class="button fr" id="collect-btn">收藏商品(2)</a>
+				</div>
+			</div>
+			<div class="item-info">
+				<div class="name">
+					<h1 class="text-big margin-big-top">此处为商品标题实物商品 仅供测试 新店默认测试商品，不发货不退款商品标题最多两行，如超出隐藏</h1>
+					<p class="text-orange text-ellipsis strong">此处为商品广告语描述，如没有广告语则不显示，广告语颜色在后台设置</p>
+				</div>
+				<div class="summary member-price hidden">
+					<p class="market-price">价格：<span class="h3 text-orange">￥800.00</span>
+						<span class="margin-large-left">土大姐原价： <em class="line-through">￥999.00</em></span>
+					</p>
+					<p>创业大赛价格说明：</p>
+					<p>参赛价格仅参赛团队可见，请参赛队成员以参赛价格下单付款，创业大赛最终解释权归土大姐特产商城所有</p>
+					<i class="icon-match"></i>
+				</div>
+				<div class="summary original-price hidden">
+					<p class="market-price">价格：<span class="h3 text-orange">￥900.00</span>
+						<span class="margin-left line-through">￥1999.00</span>
+						<i class="icon-small icon-time"></i>
+						<span class="time strong text-deep-blue" data-time = "2016-9-10 12:50:00">
+							促销还剩 <em class="t_d"></em>天
+							<em class="t_h"></em>小时
+							<em class="t_m"></em>分
+							<em class="t_s"></em>秒
+						</span>
+					</p>
+					<div class="clearfix">
+						<span class="fl">活动：</span>
+						<ul class="clearfix fl">
+							<li class="clearfix margin-bottom">
+								<span class="fl button bg-tangerine">满减</span>
+								<span class="fl margin-left">全场商品满999减99</span>
+							</li>
+							<li class="clearfix margin-bottom">
+								<span class="fl button bg-tangerine">包邮</span>
+								<span class="fl margin-left">全场商品满69免运费</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix service">
+					<div class="fl margin-big-top">
+						<p>服务：此产品由土大姐销售并提供售后，由厂家代发货</p>
+						<p>门店：门店有售，可通过门店取货 <a href="" class="text-sub margin-big-left">查看门店</a></p>
+					</div>
+					<a href="javascript:;" class="fr button member-btn radius-none hidden">返回土大姐特产商城原价</a>
+					<a href="javascript:;" class="fr button original-btn radius-none hidden">查看创业大赛参赛价格并下单</a>
+				</div>
+				<div id="choose" class="choose-wrap border-bottom border-dashed layout clearfix">
+					<div class="dl">
+						<div class="dt">包装：</div>
+						<div class="dd item-check">
+							<div class="item selected">
+								<i></i>
+								<a href="javascript:;" title="">盒装</a>
+							</div>
+							<div class="item">
+								<i></i>
+								<a href="javascript:;" title="">袋装</a>
+							</div>
+							<div class="item">
+								<i></i>
+								<a href="javascript:;" title="">罐装</a>
+							</div>
+						</div>
+					</div>
+					<div class="dl">
+						<div class="dt">重量：</div>
+						<div class="dd item-check">
+							<div class="item">
+								<i></i>
+								<a href="javascript:;" title="">300g</a>
+							</div>
+							<div class="item selected">
+								<i></i>
+								<a href="javascript:;" title="">500g</a>
+							</div>
+							<div class="item">
+								<i></i>
+								<a href="javascript:;" title="">1200g</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div id="adjust" class="layout choose-wrap clearfix">
+					<div class="dt">数量：</div>
+					<div class="dd adjust">
+						<div class="adjust-wrap">
+							<a class="adjust-control adjust-reduce disabled border" id="adjust-reduce" href="javascript:;">-</a>
+							<input class="adjust-input input border bg-white padding-none" type="text" value="1" data-min="1" data-max="268" />
+							<a class="adjust-control adjust-add border" id="adjust-add" href="javascript:;">+</a>
+						</div>
+					</div>
+				</div>
+				<a class="fl item-btn cart-btn bg-yellow" href="">立即购买</a>
+				<a class="cart-btn button bg-tangerine" href="">加入购物车</a>
+			</div>
+			<!--右边外栏-->
+			<div class="product-ext">
+				<ul class="ext-content text-gray border-bottom clearfix">
+					<li class="item-double-txt">
+						<em class="text-sub">1</em>
+						<p>商品销量</p>
+					</li>
+					<li class="item-double-txt">
+						<em class="text-yellow">1</em>
+						<p>商品评论</p>
+					</li>
+					<li class="item-double-txt last">
+						<em class="text-mix">1</em>
+						<p>商品咨询</p>
+					</li>
+				</ul>
+				<div class="item-title">看了又看</div>
+				<div class="ext-show text-center clearfix">
+					<ul>
+						<li>
+							<a href=""><img src="image/goods.jpg" width="159" height="153"/></a>
+							<p class="text-orange">￥99.00</p>
+							<p class="text-ellipsis"><a href="" title="实物商品标题实物商品标题实">实物商品标题实物商品标题实</a></p>
+						</li>
+						<li>
+							<a href=""><img src="image/goods.jpg" width="159" height="153"/></a>
+							<p class="text-orange">￥99.00</p>
+							<p class="text-ellipsis"><a href="" title="实物商品标题实物商品标题实">实物商品标题实物商品标题实</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--店铺-->
+		<div class="store container padding-large-top clearfix bg-light-blue">
+			<img src="image/icon_detail.png" />
+			<div class="fl store-title border-right">
+				<i class="icons icon-store"></i>
+				<span class="strong">实体店导航</span>
+				<p class="strong">土大姐带您逛一逛</p>
+			</div>
+			<div class="marquee-left fl">
+				<div class="bd">
+					<ul class="clearfix">
+						<li class="border-right">
+							<div class="fl store-wrap">
+								<span class="strong">土大姐特产商城前卫店</span>
+								<p class="text-small">地址：前卫茶文化广场C-1-4</p>
+							</div>					
+							<a href="" class="fr button bg-orange">店铺详情</a>
+						</li>
+						<li class="border-right">
+							<div class="fl store-wrap">
+								<span class="strong">土大姐好又鲜生鲜蔬菜惠民超市</span>
+								<p class="text-small">地址：昆明市西山区海盛路</p>
+							</div>					
+							<a href="" class="fr button bg-orange">店铺详情</a>
+						</li>
+						<li class="border-right">
+							<div class="fl store-wrap">
+								<span class="strong">土大姐现烤鲜花饼</span>
+								<p class="text-small">地址：大观商业街A10号</p>
+							</div>					
+							<a href="" class="fr button bg-orange">店铺详情</a>
+						</li>
+						<li class="border-right">
+							<div class="fl store-wrap">
+								<span class="strong">土大姐好又鲜生鲜蔬菜惠民超市</span>
+								<p class="text-small">地址：昆明市西山区海盛路</p>
+							</div>					
+							<a href="" class="fr button bg-orange">店铺详情</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--商品详情-->
+		<div class="container padding-big-top item-two-column clearfix">
+			<div class="left fl">
+				<!--浏览足迹-->
+				<div class="product-ext border-top-green border border-gray-white clearfix">
+					<div class="item-title">浏览足迹</div>
+					<ul class="ext-con-wrap">
+						<li class="clearfix">
+							<a href="" class="fl"><img src="image/goods.jpg" width="70" height="70"  /></a>
+							<div class="fr ext-con">
+								<p><a href="">实物商品标题实物商品标题实物商品标题</a></p>
+								<span class="text-orange strong">￥999.00</span>
+							</div>
+						</li>
+						<li class="clearfix">
+							<a href="" class="fl"><img src="image/goods.jpg" width="70" height="70"  /></a>
+							<div class="fr ext-con">
+								<p><a href="">实物商品标题实物商品标题实物商品标题</a></p>
+								<span class="text-orange strong">￥999.00</span>
+							</div>
+						</li>
+						<li class="clearfix">
+							<a href="" class="fl"><img src="image/goods.jpg" width="70" height="70"  /></a>
+							<div class="fr ext-con">
+								<p><a href="">实物商品标题实物商品标题实物商品标题</a></p>
+								<span class="text-orange strong">￥999.00</span>
+							</div>
+						</li>
+						<li class="clearfix">
+							<a href="" class="fl"><img src="image/goods.jpg" width="70" height="70"  /></a>
+							<div class="fr ext-con">
+								<p><a href="">实物商品标题实物商品标题实物商品标题</a></p>
+								<span class="text-orange strong">￥999.00</span>
+							</div>
+						</li>
+						<li class="clearfix">
+							<a href="" class="fl"><img src="image/goods.jpg" width="70" height="70"  /></a>
+							<div class="fr ext-con">
+								<p><a href="">实物商品标题实物商品标题实物商品标题</a></p>
+								<span class="text-orange strong">￥999.00</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="pro-detail-right" class="fr right">
+				<div id="item-bar">
+					<ul class="tab p-tab-trigger-wrap">
+						<li class="ui-switchtab-item current" data-id="detail"><a href="javascript:;">商品详情</a></li>
+						<li class="ui-switchtab-item" data-id="pro-detail-comment"><a href="javascript:;">商品评价(3)</a></li>
+						<li class="ui-switchtab-item" data-id="pro-goods-consult"><a href="javascript:;">商品咨询(279)</a></li>
+						<li class="ui-switchtab-item" data-id="pro-buy-record"><a href="javascript:;">销售记录(66)</a></li>
+						<li>
+							<div class="item-btn button border-none">
+								<i class="icon-cart">
+									<svg width="14" height="14" viewBox="0 0 1024 1024">
+										<g>
+											<path d="M 143.123 602.62 l 194.878 -1.892 l 47.3 -342.457 l 348.132 -1.892 l 49.193 196.77 h 98.384 l -51.083 -293.262 l -541.118 1.892 l -49.192 342.456 h -96.493 Z M 300.161 40.689 c 0 0 0 0 0 0 c 0 -42.842 34.731 -77.572 77.572 -77.572 c 42.841 0 77.573 34.731 77.573 77.572 c 0 0 0 0 0 0 c 0 42.841 -34.731 77.573 -77.573 77.573 c -42.841 0 -77.572 -34.731 -77.572 -77.573 Z M 667.213 40.689 c 0 -42.842 34.731 -77.572 77.573 -77.572 s 77.572 34.731 77.572 77.572 c 0 42.841 -34.731 77.573 -77.572 77.573 c -42.841 0 -77.573 -34.731 -77.573 -77.573 Z" transform="translate(0 812) scale(1 -1)" fill="#fff"></path>
+										</g>
+									</svg>
+								</i>加入购物车
+							</div>
+						</li>
+						<li class="fr code">
+							<img src="image/icon_code.png" />
+							<span class="text-orange">商品二维码</span>
+							<i class="icon-small icon-code"></i>
+						</li>
+					</ul>
+					
+				</div>
+				<div id="detail" class="ui-switch-panel ui-selected padding border-left border-right border-bottom border-gray-white">
+					<ul class="p-parameter-list clearfix">
+						<li title="商品名称：实物商品 仅供测试">商品名称：实物商品 仅供测试</li>
+						<li title="商品品牌：土大姐	">商品品牌：土大姐</li>
+						<li title="生产许可证编号: QS530124010494">生产许可证编号: QS530124010494</li>
+						<li title="产品标准号: Q/HZW 0002S">产品标准号: Q/HZW 0002S</li>
+						<li title="厂名: 昆明花滋味食品制造有限">厂名: 昆明花滋味食品制造有限</li>
+						<li title="公司厂址: 昆明经开区螺蛳湾...	">公司厂址: 昆明经开区螺蛳湾...</li>
+						<li title="配料表: 小麦粉、白砂糖、饮用水、食用猪油...">配料表: 小麦粉、白砂糖、饮用水、食用猪油...</li>
+						<li title="储藏方法: 常温密封保存">储藏方法: 常温密封保存</li>
+						<li title="保质期: 60天">保质期: 60天</li>
+						<li title="食品添加剂: 脱氢乙酸钠">食品添加剂: 脱氢乙酸钠	</li>
+						<li title="净含量: 500g">净含量: 500g</li>
+						<li title="包装方式: 包装品牌">包装方式: 包装品牌</li>
+						<li title="商品条形码: 6959789187409">商品条形码: 6959789187409</li>
+						<li title="是否为有机食品: 否">是否为有机食品: 否</li>
+						<li title="糕点种类: 鲜花饼	">糕点种类: 鲜花饼</li>
+						<li title="口味: 玫瑰味">口味: 玫瑰味</li>
+						<li title="综合口味特产品类: 鲜花饼">综合口味特产品类: 鲜花饼</li>
+						<li title="是否含糖: 含">是否含糖: 含</li>
+						<li title="糖产地: 中国大陆	">糖产地: 中国大陆</li>
+						<li title="省份: 云南省城市: 昆明市">省份: 云南省城市: 昆明市</li>
+					</ul>
+				</div>
+				<div class="detail-content-wrap margin-top">
+					<img src="image/goods.jpg" width="100%"/>
+				</div>
+				<div id="pro-detail-comment" class="padding-big-bottom margin-big-top border border-bottom-none border-gray-white product-detail-panel border-top-green">
+					<ul class="tab p-tab-trigger-wrap border-none">
+						<li class="ui-switchtab-item border-none"><a href="javascript:;">评价晒单</a></li>
+					</ul>
+					<div class="ui-switch-panel ui-selected padding-tb clearfix">
+                        <div class="text-center goods-comment-info">
+                            <span class="h2 text-tangerine">100%</span>
+                            <span>好评度</span>
+                        </div>
+                        <ul class="progress">
+                            <li>
+                                <span class="progress-label">好评：</span>
+                                <div class="progress-bar" title="100%"><div class="bg-tangerine" style="width:100%"></div></div>
+                            </li>
+                            <li>
+                                <span class="progress-label">中评：</span>
+                                <div class="progress-bar" title="0%"><div class="bg-mix" style="width:0%"></div></div>
+                            </li>
+                            <li>
+                                <span class="progress-label">差评：</span>
+                                <div class="progress-bar" title="0%"><div class="bg-mix" style="width:0%"></div></div>
+                            </li>
+                        </ul>
+                        <div class="goods-comment-btn border-left goods-consult-right fr border-gray-white">
+                            <a href="" class="button bg-tangerine border-none strong">发表心得</a>
+                            <p class="margin-small-top margin-left-15">喜欢这件商品？快告诉大家</p>
+                        </div>
+					</div>
+				</div>
+				<div id="pro-all-comment" class="product-detail-panel">
+					<ul class="tab p-tab-trigger-wrap consult-tab border">
+						<li class="ui-switchtab-item current"><a href="javascript:;">全部评价</a></li>
+						<li class="ui-switchtab-item"><a href="javascript:;">好评(3)</a></li>
+						<li class="ui-switchtab-item"><a href="javascript:;">中评(0)</a></li>
+						<li class="ui-switchtab-item"><a href="javascript:;">差评(0)</a></li>
+						<li class="ui-switchtab-item"><a href="javascript:;">晒单(0)</a></li>
+					</ul>
+					<div class="tab-tag p-tab-con-wrap consult-tag">
+						<div class="tag">
+							<ul class="comment-area border border-top-none border-gray-white">
+								<li class="clearfix margin-top border-bottom padding-tb">
+									<div class="fl head">
+										<img src="image/head.jpg" width="56" height="56">
+										<p class="text-center">土*姐</p>
+									</div>
+									<div class="fl tag-con">
+										<p>好评 | 2016-02-12 12:00:00</p>
+										<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+										<div class="comment-pic-view layout">
+											<div class="widget-carousel-content">
+												<ul class="widget-carousel-lists">
+													<li><a class="pic-center" href="#"><img src="image/goods.jpg" width="54" height="54"></a></li>
+													<li><a class="pic-center" href="#"><img src="image/pic.png" width="54" height="54"></a></li>
+												</ul>
+											</div>
+											<div class="widget-carousel-box pic-center">
+												<a class="widget-carousel-link prev" href="#"></a>
+												<a class="widget-carousel-link next" href="#"></a>
+											</div>
+										</div>
+										<p class="text-orange margin-top">商家回复：感谢支持，欢迎再次光临！</p>
+									</div>	
+								</li>
+								<li class="clearfix margin-top border-bottom padding-tb">
+									<div class="fl head">
+										<img src="image/head.jpg" width="56" height="56">
+										<p class="text-center">土*姐</p>
+									</div>
+									<div class="fl tag-con">
+										<p>好评 | 2016-02-12 12:00:00</p>
+										<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+									</div>	
+								</li>
+								<li class="clearfix margin-top border-bottom padding-tb">
+									<div class="fl head">
+										<img src="image/head.jpg" width="56" height="56">
+										<p class="text-center">土*姐</p>
+									</div>
+									<div class="fl tag-con">
+										<p>好评 | 2016-02-12 12:00:00</p>
+										<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+									</div>	
+								</li>
+								<li class="clearfix margin-top border-bottom padding-tb">
+									<div class="fl head">
+										<img src="image/head.jpg" width="56" height="56">
+										<p class="text-center">土*姐</p>
+									</div>
+									<div class="fl tag-con">
+										<p>好评 | 2016-02-12 12:00:00</p>
+										<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+									</div>	
+								</li>
+								<li class="clearfix margin-top padding-tb">
+									<div class="fl head">
+										<img src="image/head.jpg" width="56" height="56">
+										<p class="text-center">土*姐</p>
+									</div>
+									<div class="fl tag-con">
+										<p>好评 | 2016-02-12 12:00:00</p>
+										<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+									</div>	
+								</li>
+							</ul>
+							<div class="paging margin-top padding-tb clearfix record-pages">
+								<ul class="fr">
+									<li class="prev disabled"><a>上一页</a></li>
+									<li class="current"><span>1</span></li>
+									<li><a href="">2</a></li>
+									<li><a href="">3</a></li>
+									<li><a href="">4</a></li>
+									<li><a href="">5</a></li>
+									<li><a href="">下一页</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="tag hidden">
+							<p class="goods-item-no-info border border-top-none border-gray-white">暂无商品评价</p>
+						</div>
+						<div class="tag hidden">
+							<p class="goods-item-no-info border border-top-none border-gray-white">暂无商品评价</p>   
+						</div>
+						<div class="tag hidden">
+							<p class="goods-item-no-info border border-top-none border-gray-white">暂无商品评价</p>   
+						</div>
+						<div class="tag hidden">
+							<p class="goods-item-no-info border border-top-none border-gray-white">暂无商品评价</p>   
+						</div>
+					</div>					
+				</div>
+				<div id="pro-goods-consult" class="margin-big-top product-detail-panel">
+					<div class="ui-switch-panel ui-selected padding border border-gray-white clearfix border-top-green">
+                        <dl class="lh20 goods-consult-info">
+                            <dt>温馨提示：</dt>
+                            <dd class="text-gray">
+                                <span>因厂家更改商品包装、场地、附配件等不做提前通知，且每位咨询者购买、提问时间等不同。为此，其他网友的咨询仅供参考！给您带来的不变还请谅解，谢谢！</span>
+                            </dd>
+                        </dl>
+                        <div class="goods-consult-right border-left consult border-gray-white">
+                            <a href="" class="button strong bg-yellow border-none">我要咨询</a>
+                        </div>             
+					</div>
+					<div>
+						<ul class="comment-area border border-top-none border-gray-white">
+							<li class="clearfix margin-top border-bottom padding-tb">
+								<div class="fl head">
+									<img src="image/head.jpg" width="56" height="56">
+									<p class="text-center">土*姐</p>
+								</div>
+								<div class="fl tag-con">
+									<p>好评 | 2016-02-12 12:00:00</p>
+									<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+									<p class="text-orange border-top border-dashed margin-top padding-small-top">商家回复：感谢支持，欢迎再次光临！</p>
+								</div>	
+							</li>
+							<li class="clearfix margin-top border-bottom padding-tb">
+								<div class="fl head">
+									<img src="image/head.jpg" width="56" height="56">
+									<p class="text-center">土*姐</p>
+								</div>
+								<div class="fl tag-con">
+									<p>好评 | 2016-02-12 12:00:00</p>
+									<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+								</div>	
+							</li>
+							<li class="clearfix margin-top border-bottom padding-tb">
+								<div class="fl head">
+									<img src="image/head.jpg" width="56" height="56">
+									<p class="text-center">土*姐</p>
+								</div>
+								<div class="fl tag-con">
+									<p>好评 | 2016-02-12 12:00:00</p>
+									<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+								</div>	
+							</li>
+							<li class="clearfix margin-top border-bottom padding-tb">
+								<div class="fl head">
+									<img src="image/head.jpg" width="56" height="56">
+									<p class="text-center">土*姐</p>
+								</div>
+								<div class="fl tag-con">
+									<p>好评 | 2016-02-12 12:00:00</p>
+									<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+								</div>	
+							</li>
+							<li class="clearfix margin-top padding-tb">
+								<div class="fl head">
+									<img src="image/head.jpg" width="56" height="56">
+									<p class="text-center">土*姐</p>
+								</div>
+								<div class="fl tag-con">
+									<p>好评 | 2016-02-12 12:00:00</p>
+									<p>味道很正，环境好好，下次一定光顾！装修很有风格，一来马上上茶水，客人比较多，上菜速度很快，装修风格很好，卫生干净，值得等待！推荐蟹柳寿司，这个很好吃，喜欢极了。必须给满分，服务很好，很干净。再次推荐！</p>
+								</div>	
+							</li>
+						</ul>
+						<div class="paging margin-top padding-tb clearfix record-pages ">
+							<ul class="fr">
+								<li class="prev disabled"><a>上一页</a></li>
+								<li class="current"><span>1</span></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--销售记录-->
+				<div id="pro-buy-record" class="margin-big-top product-detail-panel evaluate">
+					<ul class="tab p-tab-trigger-wrap border border-gray-white border-top-green">
+						<li class="ui-switchtab-item border-none"><a href="javascript:;" id="record_btn" data-ajax="true">销售记录</a></li>
+					</ul>
+					<div class="ui-switch-panel ui-selected">
+						<div class="table text-ellipsis text-center padding buy-record border border-gray-white">
+							<div class="tr strong">
+								<div class="td w10">买家</div>
+								<div class="td w20">商品价格</div>
+								<div class="td w10">数量</div>
+								<div class="td w30">付款时间</div>
+								<div class="td w30">款式和型号</div>
+							</div>
+							<div class="tr">
+								<div class="td w10">w**l</div>
+								<div class="td w20 strong">￥1260.00</div>
+								<div class="td w10">1</div>
+								<div class="td w30">2016-04-27</div>
+								<div class="td w30">盒装500g</div>
+							</div>
+							<div class="tr">
+								<div class="td w10">w**l</div>
+								<div class="td w20 strong">￥1260.00</div>
+								<div class="td w10">1</div>
+								<div class="td w30">2016-04-27</div>
+								<div class="td w30">盒装500g</div>
+							</div>
+							<div class="tr">
+								<div class="td w10">w**l</div>
+								<div class="td w20 strong">￥1260.00</div>
+								<div class="td w10">1</div>
+								<div class="td w30">2016-04-27</div>
+								<div class="td w30">盒装500g</div>
+							</div>
+							<div class="tr">
+								<div class="td w10">w**l</div>
+								<div class="td w20 strong">￥1260.00</div>
+								<div class="td w10">1</div>
+								<div class="td w30">2016-04-27</div>
+								<div class="td w30">盒装500g</div>
+							</div>
+							<div class="tr">
+								<div class="td w10">w**l</div>
+								<div class="td w20 strong">￥1260.00</div>
+								<div class="td w10">1</div>
+								<div class="td w30">2016-04-27</div>
+								<div class="td w30">盒装500g</div>
+							</div>
+						</div>
+						<div class="paging margin-top padding-tb clearfix record-pages" data-func="ajax_record">
+							<ul class="fr">
+								<li class="prev disabled"><a>上一页</a></li>
+								<li class="current"><span>1</span></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--侧栏-->
+		<div class="side-bar">
+			<div class="ibar-panel">
+				<ul class="ibar-mp-center ibar-mp text-center">
+					<li class="ibar-btn-item stop-pro ibar-btn">
+						<a href=""><i class="icon-small icon-center"></i></a>				
+						<div class="ibar-tooltip">会员中心</div>
+					</li>
+					<li class="ibar-btn-item ibar-btn">				
+						<div class="current">
+							<i class="icon-small icon-shop"></i>
+							<p>购物车</p>
+							<span class="ibar-cart-num"><em>2</em></span>	
+						</div>						
+						<div class="ibar-show-bg"></div>
+						<div class="ibar-tooltip-center stop-pro text-left text-black">
+							<div class="padding border-bottom">
+								<i class="icon-small icon-shopping"></i>
+								<span class="strong text-big">购物车</span>
+								<em class="fr text-little margin-small-top clear-cart">清空购物车</em>
+							</div>
+							<ul class="bg-white ibar-cart clearfix">
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+							</ul>
+							<div class="settle-btn border-top padding-top text-center">
+								<p class="margin-bottom">共<em>1</em>件商品，总计<span class="text-orange">￥<em>2999.00</em></span></p>
+								<a class="cart-btn button bg-tangerine" href="">去结算</a>
+							</div>
+						</div>
+					</li>
+					<li class="ibar-btn-item ibar-btn">
+						<div class="current"><i class="icon-small icon-custom"></i></div>
+						<div class="ibar-tooltip">在线客服</div>
+						<div class="ibar-tooltip-center stop-pro text-left">
+							<div class="top">
+								<h2 class="padding-big-top strong text-main">在线咨询</h2>
+								<p class="text-default strong text-black">服务时间：9:00 - 18:00</p>
+							</div>
+							<div class="intro-box">
+								<p class="text-default strong">请选择您需要咨询的内容</p>
+								<ul class="margin-bottom">
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>创业大赛</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>售前咨询</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>售后咨询</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>大宗采购</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>万商计划</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>我要供货</a></li>
+								</ul>
+								<div class="text border-top padding-top">
+									<p class="text-default strong">如果您有如下问题，请直接拨打400电话</p>
+									<p>加盟土大姐</p>
+									<p>商务合作</p>
+									<p>广告合作</p>
+									<p>渠道合作</p>
+								</div>
+							</div>
+							<div class="bottom text-black text-center">
+								<div class="time-text">
+									<em class="icons icon-phone"></em>
+									<span class="h3 strong">400专线</span>
+									<span>周一至周五9:00-18:00</span>
+								</div>
+								<div class="tel">400-600-2042</div>
+							</div>
+						</div>
+					</li>
+					<li class="ibar-btn-item stop-pro ibar-btn">
+						<a href=""><i class="icon-small icon-inn"></i></a>
+						<div class="ibar-tooltip">线下门店</div>
+					</li>					
+				</ul>
+				<ul class="ibar-bottom ibar-mp-center text-center">
+					<li class="ibar-btn-item stop-pro ibar-code">
+						<i class="icon-small icon-qr"></i>
+						<div class="ibar-tooltip ibar-qr"><img src="image/icon_qr.jpg" width="160" height="160"/></div>
+					</li>
+					<li class="ibar-btn-item stop-pro">
+						<div class="ibar-top">
+							<i class="icon-small icon-top"></i>
+						</div>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<!--底部-->
+		<div class="layout footer border-top-green">
+			<div class="container">
+				<ul class="clearfix service">
+					<li>
+						<i class="icons icon-trade fl"></i>
+						<p class="h3">诚信交易</p>
+						<p class="text-gray">所有产品都是原厂直销</p>
+					</li>
+					<li>
+						<i class="icons icon-shipping fl"></i>
+						<p class="h3">69元包邮</p>
+						<p class="text-gray">全国地区支持货到付款</p>
+					</li>
+					<li>
+						<i class="icons icon-return fl"></i>
+						<p class="h3">15天退换货</p>
+						<p class="text-gray">享受15天内无条件办理退换货</p>
+					</li>
+					<li>
+						<i class="icons icon-shot fl"></i>
+						<p class="h3">实物拍摄</p>
+						<p class="text-gray">100%实物拍摄，绝不作假</p>
+					</li>
+					<li>
+						<i class="icons icon-update fl"></i>
+						<p class="h3">更新及时</p>
+						<p class="text-gray">数千特产，随时更新</p>
+					</li>
+				</ul>
+				<div class="link clearfix">
+					<dl class="link-title">
+						<dt><h5 class="strong">新手上路</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">买家须知</a></li>
+								<li><a href="">新用户注册</a></li>
+								<li><a href="">购物流程</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">付款及退款</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">付款方式</a></li>
+								<li><a href="">货到付款</a></li>
+								<li><a href="">积分规则</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">配送方式及费用</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">快递与物流配送说明及费用</a></li>
+								<li><a href="">EMS邮政特快专递业务介绍</a></li>
+								<li><a href="">(全国)货到付款配送及费用</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">购物风险保障</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">六大优势</a></li>
+								<li><a href="">15天无条件退货</a></li>
+								<li><a href="">支持全国货到付款</a></li>
+							</ul>
+						</dd>
+					</dl>	
+					<dl class="link-title">
+						<dt><h5 class="strong">常见问题</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">常见问题整理汇集</a></li>
+								<li><a href="">投诉与监督</a></li>
+								<li><a href="">微信分享即可赚取佣金说明</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<img src="image/logo.png" />
+					</dl>
+				</div>
+			</div>	
+			<div class="copyright">
+				<div class="container text-white text-center">
+					<p>COPYRIGHT © 2005-2016 云南萨德克科技有限公司 TUDAJIE.COM 保留一切权利。 客服热线：400-006-7894</p>
+					<p>滇ICP备16003278号 |  云南省互联网协会会员单位  | <a href="http://www.haidao.la" target="_blank" class="text-white">海盗云商</a> 提供系统技术服务</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		jQuery(".marquee-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:3});
+		$(".time").each(function(){
+			var $time=$(this).data('time');
+			$(this).countDown($time)
+		})
+	</script>
+</html>

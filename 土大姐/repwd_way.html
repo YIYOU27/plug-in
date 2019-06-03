@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>土大姐</title>
+		<link rel="stylesheet" href="css/haidao.css" />		
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+		<script type="text/javascript" src="js/public.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	</head>
+	<body>
+		<!-- 顶部工具条 -->
+		<div class="layout border-bottom border-top-green bg-gray-white">
+			<div class="site-bar container"></div>
+		</div>
+		<!-- 头部 -->
+		<div class="layout header-wrap">
+			<div class="container header">
+				<div class="logo fl">
+					<a href="/"><img src="image/logo.png"/></a>
+				</div>
+				<!-- 搜索框 -->
+				<div class="search-wrap">
+					<div class="search border border-main border-small">
+						<form name="form-search" action="#" method="post">
+							<input class="input border-none bg-none fl" type="text" placeholder="请输入商品关键字" value="" />
+							<input class="button text-big text-white radius-none bg-main fr" type="button" value="搜索" />
+						</form>
+					</div>
+					<ul class="keyword margin-top text-gray">
+						<li><a class="text-gray" href="#">鲜花饼</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">野生菌</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">蜂蜜</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">三七</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">天麻</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">玛咖</a></li>
+						<li class="spacer"></li>
+						<li><a class="text-gray" href="#">普洱茶</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 -->
+		<div class="nav layout bg-mix">
+			<div class="container">
+				<!-- 商品分类 -->
+				<div class="category-wrap fl">
+					<h2 class="dt bg-main text-default text-white">
+						<i class="icon-small icon-classify"></i>分类超市
+					</h2>
+					<div class="dd">
+						<ul class="dd-inner bg-main fl clearfix">
+							<li class="item">
+								<dl class="left-category">
+									<dt><em class="icon-small icon-goods"></em><a href="" class="strong">休闲零食</a></dt>
+									<dd>
+										<a href="">鲜花饼</a>
+										<a href="">糖果零食</a>
+										<a href="">牛肉干巴</a>
+										<a href="">宣威火腿</a>
+										<a href="">李烤鸭</a>
+									</dd>
+								</dl>
+							</li>
+							<li class="item">
+								<dl class="left-category">
+									<dt><em class="icon-small icon-goods"></em><a href="" class="strong">滋补养生</a></dt>
+									<dd>
+										<a href="">玛咖</a>
+										<a href="">三七</a>
+										<a href="">天麻</a>
+										<a href="">蜂蜜</a>
+										<a href="">辣木</a>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+						<div class="droplayer-wrap border">
+							<div class="droplayer-text clearfix">
+								<div class="item-sub">
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="" class="text-main">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+								</div>
+								<div class="item-sub">
+									<h5 class=""><a href="">保健品</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">玛咖</a></li>
+										<li><a href="">三七</a></li>
+										<li><a href="" class="text-main">天麻</a></li>
+										<li><a href="">蜂蜜</a></li>
+										<li><a href="">辣木</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="" class="text-main">鲜花饼</a></li>
+									</ul>
+									<h5 class=""><a href="">零食</a></h5>
+									<ul class="margin-top clearfix">
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+										<li><a href="" class="text-main">糖果零食</a></li>
+										<li><a href="">牛肉干巴</a></li>
+										<li><a href="">鲜花饼</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 商品分类结束 -->
+				<ul class="site-menu text-default fl">
+					<li><a href="">首页</a></li>
+					<li><a href="business_topics.html">万商计划</a></li>
+					<li><a href="">现烤鲜花饼</a></li>
+					<li><a href="">创业大赛</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--面包屑-->
+		<div class="container crumbs clearfix">
+			<p class="fl layout text-sub">
+				<i class="icon-small icon-position"></i>
+				<a href="" class="text-sub">首页</a>
+				<em class="strong">></em>
+				<a href="" class="text-sub">安全中心</a>
+				<em class="strong">></em>
+				<a href="" class="text-sub">找回密码</a>
+			</p>
+		</div>
+		<!--内容-->
+			<div class="container repwd border-top-green">
+				<ul class="nav-bar text-center clearfix">
+					<li class="step-frist selected">1、选择验证方式</li>
+					<li class="step-second">2、验证身份</li>
+					<li class="step-second step-three">3、重设密码</li>
+					<li class="step-four">4、完成</li>
+				</ul>
+				<div class="way-btn text-center">
+					<a href="javascrip:;" class="button">邮箱验证</a>
+					<a href="javascrip:;" class="button margin-large-left">短信验证</a>
+				</div>
+				<div class="validate">
+					<!--邮箱验证-->
+					<div class="double-line reg-list hidden text-default clearfix">
+						<form>
+							<div class="list margin-big-top">
+								<span class="label">邮箱</span>
+								<div class="content">
+									<em class="icon-small icon-email"></em>
+									<input class="input radius fl" type="text" name="email" placeholder="请输入您的邮箱！">
+									<!--<span class="validform_checktip validation-tips"><i></i>请填写用户名，由3-15个字符组成</span>-->
+									<em class="icon-small icon-correct"></em>
+								</div>
+							</div>
+							<div class="list">
+								<span class="label"></span>
+								<div class="content send-btn margin-large-top">
+									<input class="button bg-mix" type="submit" name="dosubmit" value="发送邮件">
+								</div>
+							</div>
+						</form>		
+					</div>
+					<!--短信验证-->
+					<div class="double-line hidden reg-list text-default clearfix">
+						<form>
+							<div class="list margin-big-top">
+								<span class="label">手机号</span>
+								<div class="content">
+									<em class="icon-small icon-mobile"></em>
+									<input class="input radius fl" type="text" name="mobile" placeholder="请输入您的手机号">
+									<!--<span class="validform_checktip validation-tips"><i></i>请填写用户名，由3-15个字符组成</span>-->
+									<em class="icon-small icon-correct"></em>
+								</div>
+							</div>
+							<div class="list margin-big-top">
+								<span class="label">验证码</span>
+								<div class="content">		
+									<input class="input radius fl" type="text" disabled="disabled"  name="vcode" placeholder="请输入您收到的验证码">
+									<a href="javascript:;" class="fl send bg-grey-light text-center" id="send">发送验证码</a>					
+									<!--<span class="validform_checktip validation-tips"><i></i>请填写用户名，由3-15个字符组成</span>-->
+								</div>
+							</div>
+							<div class="list">
+								<span class="label"></span>
+								<div class="content send-btn margin-large-top">
+									<input class="button bg-mix" type="submit" name="dosubmit" value="下一步">
+								</div>
+							</div>
+						</form>		
+					</div>
+								
+				</div>
+			</div>
+		<!--侧栏-->
+		<div class="side-bar">
+			<div class="ibar-panel">
+				<ul class="ibar-mp-center ibar-mp text-center">
+					<li class="ibar-btn-item stop-pro ibar-btn">
+						<a href=""><i class="icon-small icon-center"></i></a>				
+						<div class="ibar-tooltip">会员中心</div>
+					</li>
+					<li class="ibar-btn-item ibar-btn">				
+						<div class="current">
+							<i class="icon-small icon-shop"></i>
+							<p>购物车</p>
+							<span class="ibar-cart-num"><em>2</em></span>	
+						</div>						
+						<div class="ibar-show-bg"></div>
+						<div class="ibar-tooltip-center stop-pro text-left text-black">
+							<div class="padding border-bottom">
+								<i class="icon-small icon-shopping"></i>
+								<span class="strong text-big">购物车</span>
+								<em class="fr text-little margin-small-top clear-cart">清空购物车</em>
+							</div>
+							<ul class="bg-white ibar-cart clearfix">
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+								<li class="clearfix">
+									<a href="" class="fl" ><img src="image/goods.jpg" width="61" height="61"/></a>
+									<div class="fr ibar-con">
+										<p class="text-black text-lh"><a href="">实物商品标题实物商品标题实物商品标题实物商品标题</a></p>
+										<span class="text-orange">￥99.00</span>
+										<span class="fr text-black delete">删除</span>
+									</div>
+								</li>
+							</ul>
+							<div class="settle-btn border-top padding-top text-center">
+								<p class="margin-bottom">共<em>1</em>件商品，总计<span class="text-orange">￥<em>2999.00</em></span></p>
+								<a class="cart-btn button bg-tangerine" href="">去结算</a>
+							</div>
+						</div>
+					</li>
+					<li class="ibar-btn-item ibar-btn">
+						<div class="current"><i class="icon-small icon-custom"></i></div>
+						<div class="ibar-tooltip">在线客服</div>
+						<div class="ibar-tooltip-center stop-pro text-left">
+							<div class="top">
+								<h2 class="padding-big-top strong text-main">在线咨询</h2>
+								<p class="text-default strong text-black">服务时间：9:00 - 18:00</p>
+							</div>
+							<div class="intro-box">
+								<p class="text-default strong">请选择您需要咨询的内容</p>
+								<ul class="margin-bottom">
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>创业大赛</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>售前咨询</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>售后咨询</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>大宗采购</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>万商计划</a></li>
+									<li><a href="" target="_blank"><em class="icons icon-ask"></em>我要供货</a></li>
+								</ul>
+								<div class="text border-top padding-top">
+									<p class="text-default strong">如果您有如下问题，请直接拨打400电话</p>
+									<p>加盟土大姐</p>
+									<p>商务合作</p>
+									<p>广告合作</p>
+									<p>渠道合作</p>
+								</div>
+							</div>
+							<div class="bottom text-black text-center">
+								<div class="time-text">
+									<em class="icons icon-phone"></em>
+									<span class="h3 strong">400专线</span>
+									<span>周一至周五9:00-18:00</span>
+								</div>
+								<div class="tel">400-600-2042</div>
+							</div>
+						</div>
+					</li>
+					<li class="ibar-btn-item stop-pro ibar-btn">
+						<a href=""><i class="icon-small icon-inn"></i></a>
+						<div class="ibar-tooltip">线下门店</div>
+					</li>					
+				</ul>
+				<ul class="ibar-bottom ibar-mp-center text-center">
+					<li class="ibar-btn-item stop-pro ibar-code">
+						<i class="icon-small icon-qr"></i>
+						<div class="ibar-tooltip ibar-qr"><img src="image/icon_qr.jpg" width="160" height="160"/></div>
+					</li>
+					<li class="ibar-btn-item stop-pro">
+						<div class="ibar-top">
+							<i class="icon-small icon-top"></i>
+						</div>
+					</li>
+				</ul>
+			</div>			
+		</div>
+		<!--底部-->
+		<div class="layout footer border-top-green">
+			<div class="container">
+				<ul class="clearfix service">
+					<li>
+						<i class="icons icon-trade fl"></i>
+						<p class="h3">诚信交易</p>
+						<p class="text-gray">所有产品都是原厂直销</p>
+					</li>
+					<li>
+						<i class="icons icon-shipping fl"></i>
+						<p class="h3">69元包邮</p>
+						<p class="text-gray">全国地区支持货到付款</p>
+					</li>
+					<li>
+						<i class="icons icon-return fl"></i>
+						<p class="h3">15天退换货</p>
+						<p class="text-gray">享受15天内无条件办理退换货</p>
+					</li>
+					<li>
+						<i class="icons icon-shot fl"></i>
+						<p class="h3">实物拍摄</p>
+						<p class="text-gray">100%实物拍摄，绝不作假</p>
+					</li>
+					<li>
+						<i class="icons icon-update fl"></i>
+						<p class="h3">更新及时</p>
+						<p class="text-gray">数千特产，随时更新</p>
+					</li>
+				</ul>
+				<div class="link clearfix">
+					<dl class="link-title">
+						<dt><h5 class="strong">新手上路</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">买家须知</a></li>
+								<li><a href="">新用户注册</a></li>
+								<li><a href="">购物流程</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">付款及退款</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">付款方式</a></li>
+								<li><a href="">货到付款</a></li>
+								<li><a href="">积分规则</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">配送方式及费用</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">快递与物流配送说明及费用</a></li>
+								<li><a href="">EMS邮政特快专递业务介绍</a></li>
+								<li><a href="">(全国)货到付款配送及费用</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="link-title">
+						<dt><h5 class="strong">购物风险保障</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">六大优势</a></li>
+								<li><a href="">15天无条件退货</a></li>
+								<li><a href="">支持全国货到付款</a></li>
+							</ul>
+						</dd>
+					</dl>	
+					<dl class="link-title">
+						<dt><h5 class="strong">常见问题</h5></dt>
+						<dd>
+							<ul>
+								<li><a href="">常见问题整理汇集</a></li>
+								<li><a href="">投诉与监督</a></li>
+								<li><a href="">微信分享即可赚取佣金说明</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl>
+						<img src="image/logo.png" />
+					</dl>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container text-white text-center">
+					<p>COPYRIGHT © 2005-2016 云南萨德克科技有限公司 TUDAJIE.COM 保留一切权利。 客服热线：400-006-7894</p>
+					<p>滇ICP备16003278号 |  云南省互联网协会会员单位  | <a href="http://www.haidao.la" target="_blank" class="text-white">海盗云商</a> 提供系统技术服务</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			/*仿刷新：检测是否存在cookie*/
+			if($.cookie("vcode_pc")){
+				reget($.cookie("vcode_pc"));
+			}
+			//选择验证方式
+			$(".way-btn a").live('click',function(){
+				$(this).parent(".way-btn").addClass("hidden");
+				$(this).addClass("selected").siblings().removeClass("selected")
+				$(".step-frist").removeClass("selected");			
+				$(".step-second").addClass("selected");
+				$(".step-second.step-three").removeClass("selected");
+				$(".validate .reg-list").addClass("hidden");
+				$(".validate .reg-list").eq($(this).index()).removeClass("hidden");
+			});				
+		});
+		var $mobile=$("input[name='mobile']");
+		var $vcode=$("input[name='vcode']");
+		var ajax_status;
+		/*发送验证码*/
+		$("#send").click(function(){
+			if($.cookie("vcode_pc")){
+				return false;
+			}
+			send_vcode();
+			reget(60);
+			
+		});
+		function send_vcode(){
+			if($("#send").attr("disabled")=='disabled'){
+				return false;
+			}
+		}
+		function reget(count){
+		var $send_sms = $("#send");
+		var count = count;
+		$send_sms.attr('disabled','disabled');
+		var resend = setInterval(function(){
+			count--;
+			if (count > 0){
+				$('#send').html('重新获取('+count+'秒)');
+				$('#send').attr('disabled','disabled');
+				$('#send').css("background","#00C362");
+				$('#send').css("cursor","no-drop");
+				$mobile.attr('readonly',true);
+				$("input[name='vcode']").removeAttr('disabled');
+				$.cookie("vcode_pc", count, {path: '/', expires: (1/86400)*count});
+				
+			}else {
+				clearInterval(resend);
+				$mobile.removeAttr('readonly');
+				$('#send').removeAttr('disabled');
+				$('#send').css("background","#c4c4c4");
+				$('#send').css("cursor","pointer");
+				$send_sms.html("重获验证码").removeAttr('disabled');
+				$("#send").click(function(){
+					send_vcode();
+				});
+			}
+		}, 1000);
+		 
+		}
+	</script>
+</html>
