@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.carousel {
+          perspective: 500px;
+  				display: flex;
+          flex-direction: column;
+          align-items: center;/*此样式不能通过标签名来写*/
+}
+
+.carousel figure {
+  width: 40%;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.carousel figure img {
+  width: 100%;
+  padding: 0 0px;
+  opacity: 0.6;
+  
+}
+
+/*这段话至关重要,实现饿了真正的图片转动效果，如果没有这句话，反而在img里面添加绝对定位，效果如new_file.html.对比一下0和4里面的效果*/
+.carousel figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0;
+}
+.carousel nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 1px solid;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
